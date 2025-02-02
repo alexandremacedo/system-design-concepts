@@ -3,27 +3,28 @@
 # Introdução
 O objetivo principal de um Design System não é apenas escrever bons códigos, mas sim antecipar e resolver problemas antes que eles se tornem críticos. Ele é uma abordagem estratégica que combina boas práticas de engenharia, design e arquitetura para garantir escalabilidade, performance e eficiência em sistemas modernos.
 
-# Caching
-O caching é uma técnica essencial em sistemas de alta performance, especialmente em cenários com grande volume de leituras ou dados que mudam raramente (low churn data). Sua implementação reduz a carga no banco de dados e melhora significativamente os tempos de resposta.
+### Quando seu sistema precisa lidar com muitas leituras
+1. [Caching](https://github.com/alexandremacedo/system-design-concepts/blob/master/caching.md)
 
-## Benefícios do Caching:
-- Redução do tempo de acesso a dados.
-- Diminuição da carga em recursos de backend.
-- Aumento da escalabilidade do sistema.
+### Quando seu sistema precisa lidar com muitas escritas
+1. [Mensageria](https://github.com/alexandremacedo/system-design-concepts/blob/master/mensageria.md)
+2. [Banco de dados LSM-Tree](https://github.com/alexandremacedo/system-design-concepts/blob/master/lsm-tree-db.md)
 
-## Desafios do Caching:
-- Manter o cache sincronizado com o banco de dados
-- Lidar com a expiração do cache: Dados armazenados podem expirar, levando a possíveis problemas de stale data (dados desatualizados).
+### Quando seu sistema precisa lidar com alta disponibilidade
+1. [Redundância e Failover](https://github.com/alexandremacedo/system-design-concepts/blob/master/redundancia-failover.md)
+2. [Load Balancers](https://github.com/alexandremacedo/system-design-concepts/blob/master/loadbalancing.md)
+3. [Réplicas de Banco de Dados](https://github.com/alexandremacedo/system-design-concepts/blob/master/replicas-db.md)
 
-## Estratégias para Consistência de Cache
-- TTL (Time-to-Live) nas Keys:
-  - Define um tempo de validade para cada item armazenado no cache.
-  - Após o tempo expirar, o dado é removido automaticamente, garantindo que apenas informações recentes sejam acessadas.
-- Write-through Caching:
-  - Toda escrita no banco de dados é imediatamente refletida no cache.
-  - Garante que os dados mais recentes estejam sempre disponíveis no cache.
+### Quando seu sistema precisa lidar com alta latência
+1. [CDN](https://github.com/alexandremacedo/system-design-concepts/blob/master/cdn.md)
 
-## Soluções de Mercado
-Duas das mais populares são:
-- Memcached
-- Redis
+### Quando seu sistema precisa lidar arquivos pesados
+1. [Block Storage](https://github.com/alexandremacedo/system-design-concepts/blob/master/block-storage.md)
+2. [Object Storage](https://github.com/alexandremacedo/system-design-concepts/blob/master/object-storage.md)
+
+### Quando seu sistema precisa lidar com a dificuldade de encontrar pontos de falhas de forma antecipada
+1. [Monitoramento e Análises](https://github.com/alexandremacedo/system-design-concepts/blob/master/monitoramento-e-analise.md)
+
+### Quando seus sistema precisa lidar com queries extremamente lentas
+1. [Índices em Banco de Dados](https://github.com/alexandremacedo/system-design-concepts/blob/master/indices-db.md)
+2. [Sharding em Banco de Dados](https://github.com/alexandremacedo/system-design-concepts/blob/master/sharding-db.md)
