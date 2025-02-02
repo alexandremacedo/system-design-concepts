@@ -22,9 +22,9 @@ O objetivo principal de um Design System não é apenas escrever bons códigos, 
 1. [Block Storage](https://github.com/alexandremacedo/system-design-concepts/blob/master/block-storage.md)
 2. [Object Storage](https://github.com/alexandremacedo/system-design-concepts/blob/master/object-storage.md)
 
-### Quando seu sistema precisa lidar com a dificuldade de encontrar pontos de falhas de forma antecipada
+### Quando seu sistema precisa lidar com falhas de forma antecipada
 1. [Monitoramento e Análises](https://github.com/alexandremacedo/system-design-concepts/blob/master/monitoramento-e-analise.md)
 
-### Quando seus sistema precisa lidar com queries extremamente lentas
+### Quando seu sistema precisa lidar com queries extremamente lentas
 1. [Índices em Banco de Dados](https://github.com/alexandremacedo/system-design-concepts/blob/master/indices-db.md)
 2. [Sharding em Banco de Dados](https://github.com/alexandremacedo/system-design-concepts/blob/master/sharding-db.md)
