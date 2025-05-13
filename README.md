@@ -1,7 +1,7 @@
 # System Design Concepts
 
 # Introdução
-O objetivo principal de um Design System não é apenas escrever bons códigos, mas sim antecipar e resolver problemas antes que eles se tornem críticos. Ele é uma abordagem estratégica que combina boas práticas de engenharia, design e arquitetura para garantir escalabilidade, performance e eficiência em sistemas modernos.
+O objetivo principal de um System Design não é apenas escrever bons códigos, mas sim antecipar e resolver problemas antes que eles se tornem críticos. Ele é uma abordagem estratégica que combina boas práticas de engenharia, design e arquitetura para garantir escalabilidade, performance e eficiência em sistemas modernos.
 
 ### Quando seu sistema precisa lidar com muitas leituras
 1. [Caching](https://github.com/alexandremacedo/system-design-concepts/blob/master/caching.md)
